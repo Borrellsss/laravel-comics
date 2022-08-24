@@ -1,0 +1,78 @@
+// *COMMON
+h4 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.footer-top,
+.footer-bottom {
+    .container > .flex {
+        justify-content: space-between;
+    }
+}
+
+// *footer top section
+.footer-top {
+    background-image: url("../images/footer-bg.jpg");
+}
+.footer-top-left {
+    padding: $footer-top-left-padding;
+
+    &.flex {
+        gap: 1.5rem;
+    }
+
+    ul {
+        li {
+        line-height: 0.7rem;
+            a {
+                font-size: $secondary-font-size;
+                color: $tertiary-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.footer-top-left-merch .dc-comics {
+    margin-bottom: 1rem;
+}
+.footer-top-right {
+    width: 45%;
+    background: url("../images/dc-logo-bg.png");
+}
+.footer-top,
+.footer-top-right {
+    background-size: cover;
+    background-position: center;
+}
+
+// *footer bottom section
+.footer-bottom {
+    padding: $footer-bottom-padding;
+    background-color: #303030;
+    color: white;
+}
+.footer-bottom {
+    .container > .flex {
+        align-items: center;
+    }
+}
+.sites {
+    align-items: center;
+
+    > span:first-of-type {
+        font-size: 0.8rem;
+        font-weight: $main-font-weight;
+        color: $main-color;
+    }
+}
+.sites-links li {
+    margin-left: 0.8rem;
+    width: $footer-bottom-sites-img-width;
+
+    &:first-of-type {
+        margin-left: 1rem;
+    }
+}

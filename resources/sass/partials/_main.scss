@@ -1,0 +1,54 @@
+main .container {
+
+    > .flex {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+}
+.first-section {
+    padding: $first-section-padding;
+    color: #fff;
+    background-color: $secondary-color;
+    position: relative;
+
+    .series {
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        background-color: $main-color;
+        position: absolute;
+        left: 17.5%;
+        top: 0;
+        transform: translatey(-50%);
+    }
+    .full-blue {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.second-section {
+    padding: $second-section-padding;
+    font-size: $main-font-size;
+    color: #fff;
+    background-color: $main-color;
+
+    a {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 0.5rem;
+            width: auto;
+            height: 2.3rem;
+        }
+    }
+}
+.merch > .flex {
+    justify-content: space-evenly;
+    align-items: center;
+
+    li:last-child img {
+        height: 1.5rem;
+    }
+}

@@ -1,0 +1,52 @@
+// *RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h4 {
+    font-size: $h4-font-sizes;
+}
+
+// *COMMON
+.container {
+    margin: 0 auto;
+    width: 65%;
+}
+.flex {
+    display: flex;
+}
+.btn {
+    display: inline-block;
+    border: 2px solid;
+    
+    &.transparent-blue {
+        padding: $blue-border-btn-padding;
+        border-color: $main-color;
+        font-size: $blue-border-btn-font-size;
+        font-weight: $main-font-weight;
+    }
+    &.full-blue {
+        padding: $blue-full-btn-padding;
+        border-color: $main-color;
+        background-color: $main-color;
+        font-size: $blue-full-btn-font-size;
+        font-weight: $main-font-weight;
+    }
+}

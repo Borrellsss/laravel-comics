@@ -1,0 +1,62 @@
+.container .flex {
+    justify-content: space-between;
+}
+header {
+    background-color: #fff;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    z-index: 100;
+
+    input {
+        width: 80px;
+        height: 1.3rem;
+        border: none;
+        border-bottom: 2px solid $main-color;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-align: end;
+        line-height: 0.2rem;
+        align-self: center;
+    }
+}
+.header-top {
+    padding-block: 0.3rem;
+    font-size: 0.5rem;
+    color: white;
+    background-color: $main-color;
+
+    > .flex {
+        justify-content: flex-end;
+    }
+    a {
+        margin-left: 3rem;
+    }
+}
+.header-img {
+    padding: 0.8rem 0;
+    width: 60px;
+}
+.header-menu {
+    font-size: $main-font-size;
+    font-weight: $main-font-weight;
+  
+    nav {
+        height: 100%;
+  
+        ul {
+            height: 100%;
+  
+            li {
+                margin-left: 2rem;
+                display: flex;
+                align-items: center;
+  
+                &.active {
+                    color: $main-color;
+                    box-shadow: 0 -4px $main-color inset;
+                }
+            }
+        }
+    }
+}
