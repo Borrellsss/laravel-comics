@@ -32,6 +32,9 @@ h4 {
   margin: 0 auto;
   width: 65%;
 }
+.container.small {
+  width: 52%;
+}
 
 .flex {
   display: flex;
@@ -162,7 +165,7 @@ header input {
 }
 
 .jumbotron {
-  height: 300px;
+  height: 295px;
   background-image: url("../images/jumbotron.jpg");
   background-size: cover;
   background-position: top;
@@ -217,6 +220,149 @@ main .container > .flex {
 }
 .merch > .flex li:last-child img {
   height: 1.5rem;
+}
+
+.single-comics .flex {
+  gap: 0;
+}
+.single-comics > div:first-of-type {
+  height: 60px;
+  background-color: #0c7cec;
+}
+.single-comics > div:first-of-type > .container.small {
+  height: 100%;
+  position: relative;
+}
+.single-comics > div:first-of-type .img-wrapper {
+  width: 19%;
+  border: 1px solid white;
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+}
+.single-comics > div:first-of-type .img-wrapper > span {
+  padding-block: 0.1rem;
+  color: white;
+  font-size: 0.6rem;
+  background-color: #00a9d9;
+  position: absolute;
+}
+.single-comics > div:first-of-type .img-wrapper > span:first-of-type {
+  padding-inline: 0.4rem;
+  top: 0;
+  left: 0;
+}
+.single-comics > div:first-of-type .img-wrapper > span:last-of-type {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+.single-comics :is(h1, h3) {
+  color: #002f55;
+}
+
+.single-comics-text {
+  padding-bottom: 3rem;
+  width: 65%;
+}
+.single-comics-text > h1 {
+  margin-bottom: 0.9rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.single-comics-text .comics-price {
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  background-color: #55ba59;
+  border-bottom: 1px solid black;
+}
+.single-comics-text .comics-price .comics-price-left,
+.single-comics-text .comics-price .comics-price-right {
+  padding: 0.65rem 1.3rem;
+}
+.single-comics-text .comics-price > .comics-price-left {
+  color: #aef37f;
+  border-right: 1px solid black;
+  flex-grow: 1;
+}
+.single-comics-text .comics-price > .comics-price-left .price-tag {
+  color: white;
+}
+.single-comics-text .comics-price > .comics-price-right {
+  color: white;
+}
+
+.single-comics-banner {
+  width: 30%;
+}
+.comics-description > p {
+  color: grey;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+}
+
+.adv {
+  padding-block: 2rem 0.15rem;
+  display: block;
+  text-align: right;
+  color: darkslategrey;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.single-comics-info {
+  padding-block: 1rem 4rem;
+  height: 300px;
+  border-top: 1px solid lightgray;
+  background-color: #f6f6f6;
+}
+.single-comics-info h3 {
+  padding-bottom: 1.2rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid lightgray;
+}
+.single-comics-info .single-comics-talent,
+.single-comics-info .single-comics-specs {
+  width: 47%;
+}
+.single-comics-info .single-comics-talent > .flex,
+.single-comics-info .single-comics-specs > .flex {
+  padding-block: 0.6rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.single-comics-talent > .flex > div:last-of-type,
+.single-comics-specs > .flex > div:last-of-type {
+  width: 70%;
+}
+.single-comics-talent > .flex *,
+.single-comics-specs > .flex * {
+  font-size: 0.6rem;
+}
+.single-comics-talent > .flex a,
+.single-comics-specs > .flex a {
+  color: #00a9d9;
+}
+
+.single-comics-specs-series {
+  text-transform: uppercase;
+}
+
+.single-comics-more-info {
+  border-block: 1px solid lightgrey;
+}
+.single-comics-more-info .container.small > .flex {
+  gap: 0;
+}
+
+.more-info-card {
+  padding: 0.6rem;
+  width: 25%;
+  border-inline: 1px solid lightgrey;
+  font-size: 0.55rem;
+  color: grey;
+  font-weight: 700;
 }
 
 h4 {

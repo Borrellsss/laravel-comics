@@ -16,10 +16,10 @@
                 <nav>
                     <ul class="flex">
                         <li>
-                            <a href="#">CHARACTERS</a>
+                            <a href="">CHARACTERS</a>
                         </li>
-                        <li class="active">
-                            <a href="#">COMICS</a>
+                        <li class="{{ Route::current()->getName() === 'home' ? 'active' : '' }}">
+                            <a href="{{route("home")}}">COMICS</a>
                         </li>
                         <li>
                             <a href="#">MOVIES</a>

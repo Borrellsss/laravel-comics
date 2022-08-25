@@ -6,7 +6,9 @@
         <div class="flex">
             @foreach ($comics_array as $comics)
                 <div class="card">
-                    <a href="#">
+                    <a href="{{route("comics", [
+                        "id" => $comics["id"]
+                    ])}}">
                         <div class="card-image">
                             <img src="{{$comics["thumb"]}}" alt="{{$comics["title"]}}">
                         </div>

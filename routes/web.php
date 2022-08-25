@@ -14,11 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $comics_array = config("comics");
+    // !DEBUG
+    // dd($comics_array);
+    
     $data = [
-        "comics_array" => config("comics")
+        "comics_array" => $comics_array
+    ];
+
+    return view('home', $data);
+})->name('home');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics_array = config("comics");
+    // !DEBUG
+    // dd($comics_array);
+
+    $single_comics = [];
+
+    foreach($comics_array as $comics) {
+        if($comics["id"] == $id) {
+            $single_comics = $comics;
+        }
+    }
+    // !DEBUG
+    // dd($single_comics);
+
+    if(empty($single_comics)) {
+        abort("404");
+    }
+
+    $data = [
+        "single_comics" => $single_comics
     ];
     // !DEBUG
     // dd($data["comics_array"]);
 
-    return view('home', $data);
-})->name('home');
+    return view('comics-info', $data);
+})->name('comics');
